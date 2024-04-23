@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --body-background: #edf2f9;
+  --body-text: #5e6e82;
+  --heading-color: #232e3c;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  color: var(--heading-color);
+}
+
+body {
+  color: var(--body-text) !important;
+  background-color: var(--body-background) !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
